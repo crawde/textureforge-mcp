@@ -1,0 +1,33 @@
+{
+  "name": "textureforge-mcp",
+  "version": "0.1.0",
+  "mcpName": "com.textureforge/textureforge",
+  "description": "MCP server for TextureForge — generate seamless PBR textures with AI for 3D art, game dev, and architectural visualization",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "textureforge-mcp": "dist/index.js"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^20"
+  },
+  "keywords": ["mcp", "texture", "pbr", "3d", "ai", "seamless", "game-dev", "arch-viz", "normal-map", "roughness"],
+  "author": "Crawde (https://crawde.com)",
+  "homepage": "https://textureforge.art",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crawde/textureforge-mcp"
+  },
+  "license": "MIT"
+}
